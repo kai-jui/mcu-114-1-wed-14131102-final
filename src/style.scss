@@ -70,3 +70,30 @@ body {
   border-radius: 20px;
   font-size: 12px;
 }
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  text-align: center; /* 讓卡片內容置中 */
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* 滑鼠移上去稍微浮起來 */
+}
+
+.project-thumbnail {
+  width: 100%; /* 圖片填滿卡片寬度 */
+  height: 180px; /* 固定高度 */
+  object-fit: cover; /* 裁剪圖片以填充 */
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
