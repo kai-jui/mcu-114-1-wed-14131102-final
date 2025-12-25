@@ -47,6 +47,17 @@ body {
   background: #ffffff;
 }
 
+.profile-img {
+  width: 180px; /* 設定寬度 */
+  height: 180px; /* 設定高度 */
+  border-radius: 50%; /* 變成圓形 */
+  -o-object-fit: cover;
+     object-fit: cover; /* 確保圖片不變形 */
+  margin-bottom: 20px;
+  border: 5px solid white; /* 加個白邊框更有質感 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 加點陰影 */
+}
+
 .container {
   padding: 4rem 10%;
 }
