@@ -1,0 +1,133 @@
+@charset "UTF-8";
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    padding: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 2rem 5%;
+  }
+  .progress-bar {
+    margin: 15px 0;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 導覽列樣式 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hero 區塊 */
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+}
+
+.profile-img {
+  width: 180px; /* 設定寬度 */
+  height: 180px; /* 設定高度 */
+  border-radius: 50%; /* 變成圓形 */
+  -o-object-fit: cover;
+     object-fit: cover; /* 確保圖片不變形 */
+  margin-bottom: 20px;
+  border: 5px solid white; /* 加個白邊框更有質感 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 加點陰影 */
+}
+
+.container {
+  padding: 4rem 10%;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 20px;
+  margin: 10px 0 20px;
+}
+
+.progress {
+  background: #2b9eeb;
+  color: white;
+  padding: 5px;
+  text-align: right;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  text-align: center; /* 讓卡片內容置中 */
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* 滑鼠移上去稍微浮起來 */
+}
+
+.project-thumbnail {
+  width: 100%; /* 圖片填滿卡片寬度 */
+  height: 180px; /* 固定高度 */
+  -o-object-fit: cover;
+     object-fit: cover; /* 裁剪圖片以填充 */
+  border-radius: 5px;
+  margin-bottom: 15px;
+}/*# sourceMappingURL=style.css.map */
