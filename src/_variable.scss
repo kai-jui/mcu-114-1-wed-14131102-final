@@ -25,42 +25,37 @@ html {
 }
 
 /* 2. 手機尺寸 (螢幕寬度小於 640px) */
-@media (max-width: 640px) {
-  /* Hero 區塊內容調整 */
-  .hero h1 {
-    font-size: 1.8rem; /* 手機字體進一步縮小 */
-    line-height: 1.3;
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* 確保內容是上下排 */
+    gap: 20px; /* 縮小兩個區塊間的距離 */
   }
 
-  .hero p {
-    font-size: 1rem;
-    padding: 0 10%;
-    margin-top: 10px;
+  .about-header h2 {
+    font-size: 1.8rem; /* 縮小標題字體 */
   }
 
-  /* 容器邊距與文字 */
-  .container {
-    padding: 3rem 5%; /* 減少左右留白，增加內容寬度 */
+  .intro-card {
+    padding: 20px; /* 減少卡片內邊距，節省空間 */
+    min-height: auto; /* 手機版不需要固定高度 */
   }
 
-  .container h2 {
-    font-size: 1.5rem;
+  .edu-list li {
+    flex-direction: row; /* 保持圓點、學校、日期在一行 */
+    flex-wrap: wrap; /* 如果字太長，容許日期換行 */
+    font-size: 14px; /* 稍微調小字體 */
   }
 
-  /* 進度條文字縮小，避免在窄螢幕擠壓 */
-  .progress {
-    font-size: 10px;
-    padding: 3px 10px;
+  .date {
+    text-align: left; /* 手機版日期改為靠左對齊，閱讀較順 */
+    margin-left: 27px; /* 讓日期與學校文字對齊，避開圓點 */
+    width: 100%; /* 強制日期換行或占滿寬度 */
+    color: #888; /* 顏色調淺一點做區隔 */
   }
 
-  /* 卡片內的文字內容 */
-  .card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-  }
-
-  .card p {
-    font-size: 0.9rem;
-    color: #666;
+  /* 英雄區照片在手機版縮小一點 */
+  .profile-img {
+    width: 150px;
+    height: 150px;
   }
 }

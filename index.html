@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>楊鎧睿的個人資訊網頁</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -32,26 +32,39 @@
         </button>
       </div>
     </section>
-    <section id="about" class="container">
-      <h2>關於我</h2>
-      <p class="quote">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-        soluta?
+    <section id="about" class="about-section">
+  <div class="about-header">
+    <h2>關於我</h2>
+    <p class="subtitle">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, soluta?
+    </p>
+  </div>
+
+  <div class="about-container">
+    <div class="intro-card">
+      <h3>自我介紹</h3>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates vel quibusdam sunt excepturi cumque dicta dolor est, maxime culpa voluptatibus.
       </p>
-      <div class="about-content">
-        <h3>自我介紹</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          explicabo alias exercitationem iure illo blanditiis eos ducimus
-          repellendus, ipsa numquam.
-        </p>
-        <h3>教育程度</h3>
-        <ul>
-          <li><strong>銘傳大學 資訊管理系</strong> (2025 - 2029)</li>
-          <li><strong>國立新化高級中學</strong> (2022 - 2025)</li>
-        </ul>
-      </div>
-    </section>
+    </div>
+
+    <div class="education-content">
+      <h3>教育程度</h3>
+      <ul class="edu-list">
+        <li>
+          <span class="dot"></span>
+          <span class="school">銘傳大學 資訊管理系</span>
+          <span class="date">2025 - 2029</span>
+        </li>
+        <li>
+          <span class="dot"></span>
+          <span class="school">國立新化高級中學</span>
+          <span class="date">2022 - 2025</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
     <section id="skills" class="container">
       <h2>技術能力</h2>
       <div class="skill-item">

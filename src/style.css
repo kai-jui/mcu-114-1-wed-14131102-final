@@ -1,5 +1,56 @@
-@use "variable";
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
 
+/* --- 響應式文字與內容調整 --- */
+/* 1. 平板尺寸 (螢幕寬度小於 1024px) */
+@media (max-width: 1024px) {
+  /* 縮小標題與文字，增加閱讀舒適度 */
+  .hero h1 {
+    font-size: 2.2rem;
+    padding: 0 20px;
+  }
+  .hero p {
+    font-size: 1.1rem;
+    padding: 0 15%;
+  }
+  .container h2 {
+    font-size: 1.8rem;
+    text-align: center; /* 平板上標題置中更美觀 */
+    margin-bottom: 1.5rem;
+  }
+}
+/* 2. 手機尺寸 (螢幕寬度小於 640px) */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* 確保內容是上下排 */
+    gap: 20px; /* 縮小兩個區塊間的距離 */
+  }
+  .about-header h2 {
+    font-size: 1.8rem; /* 縮小標題字體 */
+  }
+  .intro-card {
+    padding: 20px; /* 減少卡片內邊距，節省空間 */
+    min-height: auto; /* 手機版不需要固定高度 */
+  }
+  .edu-list li {
+    flex-direction: row; /* 保持圓點、學校、日期在一行 */
+    flex-wrap: wrap; /* 如果字太長，容許日期換行 */
+    font-size: 14px; /* 稍微調小字體 */
+  }
+  .date {
+    text-align: left; /* 手機版日期改為靠左對齊，閱讀較順 */
+    margin-left: 27px; /* 讓日期與學校文字對齊，避開圓點 */
+    width: 100%; /* 強制日期換行或占滿寬度 */
+    color: #888; /* 顏色調淺一點做區隔 */
+  }
+  /* 英雄區照片在手機版縮小一點 */
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -52,7 +103,8 @@ body {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 20px;
   border: 5px solid white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -128,8 +180,8 @@ body {
   text-align: right;
   color: #333;
 }
-/* -------------------------------------- */
 
+/* -------------------------------------- */
 .container {
   padding: 4rem 10%;
 }
@@ -172,7 +224,8 @@ body {
 .project-thumbnail {
   width: 100%;
   height: 180px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 5px;
   margin-bottom: 15px;
-}
+}/*# sourceMappingURL=style.css.map */
