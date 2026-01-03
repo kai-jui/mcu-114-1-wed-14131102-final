@@ -38,14 +38,108 @@ body {
 }
 
 /* Hero 區塊 */
-.hero {
-  height: 80vh;
+.hero-section {
+  padding: 80px 10%;
+  background-color: #ffffff;
+  min-height: 80vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  background: #ffffff;
+
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .hero-content {
+    flex: 1;
+    text-align: left;
+
+    .name-tag {
+      background-color: #e4e81a; // 圖片中的金黃色標籤
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .main-title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 20px 0;
+      color: #333;
+    }
+
+    .description {
+      color: #666;
+      margin-bottom: 30px;
+      max-width: 500px;
+    }
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+
+    button {
+      padding: 12px 25px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-hire {
+      background-color: #4d6ae9;
+      color: white;
+    }
+
+    .btn-download {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    gap: 20px;
+
+    a {
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+      text-decoration: none;
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    .profile-img {
+      width: 400px; // 根據截圖適度調整大小
+      height: 400px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 .profile-img {

@@ -26,6 +26,25 @@ html {
 
 /* 2. 手機尺寸 (螢幕寬度小於 640px) */
 @media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse; // 手機版讓文字在下照片在上
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;
+    .description {
+      margin: 0 auto 30px auto;
+    }
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
   .about-container {
     flex-direction: column; /* 確保內容是上下排 */
     gap: 20px; /* 縮小兩個區塊間的距離 */
