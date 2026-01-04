@@ -67,6 +67,27 @@ html {
     height: 150px;
   }
 }
+.nav-links a {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  width: 6px;
+  height: 6px;
+  background-color: #7b68ee;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.nav-links a.active::after {
+  transform: translateX(-50%) scale(1);
+}
+
 * {
   margin: 0;
   padding: 0;
