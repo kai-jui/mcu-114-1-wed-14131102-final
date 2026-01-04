@@ -11,12 +11,13 @@
     transform: translateX(-50%) scale(0); // 預設隱藏
     width: 6px;
     height: 6px;
-    background-color: #7b68ee; // 你的截圖看起來像紫色
+    background-color: #132e88; // 你的截圖看起來像紫色
     border-radius: 50%;
     transition: transform 0.3s ease;
   }
 
-  &.active::after {
-    transform: translateX(-50%) scale(1); // 只有 active 的才有圓點
+  // 重點：當滑鼠移上去時顯示圓點
+  &:hover::after {
+    transform: translateX(-50%) scale(1);
   }
 }

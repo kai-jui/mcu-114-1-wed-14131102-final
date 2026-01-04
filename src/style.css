@@ -80,12 +80,62 @@ html {
   transform: translateX(-50%) scale(0);
   width: 6px;
   height: 6px;
-  background-color: #7b68ee;
+  background-color: #132e88;
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
-.nav-links a.active::after {
+.nav-links a:hover::after {
   transform: translateX(-50%) scale(1);
+}
+
+/* 頁尾樣式 */
+.footer {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #f0f0f0;
+}
+.footer .footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+.footer .footer-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.footer .footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.footer .footer-social .icon-circle {
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.footer .footer-social .icon-circle:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  color: #6f42c1;
+}
+.footer .copyright {
+  color: #888;
+  font-size: 14px;
+  margin-top: 20px;
 }
 
 * {
