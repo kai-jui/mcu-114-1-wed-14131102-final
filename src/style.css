@@ -162,6 +162,24 @@ body {
   top: 0;
   z-index: 1000;
 }
+.navbar button {
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.navbar .btn-download {
+  background-color: #f0f0f0;
+  color: #333;
+  /* --- 加在這裡 --- */
+}
+.navbar .btn-download:hover {
+  background-color: #000000;
+  color: #fffefe;
+  transform: translateY(-2px);
+}
 
 .nav-links {
   display: flex;
@@ -230,7 +248,8 @@ body {
   color: white;
 }
 .hero-section .cta-buttons .btn-hire:hover {
-  background-color: #0d38e3;
+  background-color: #ffffff;
+  color: #4d6ae9;
   transform: translateY(-2px);
 }
 .hero-section .cta-buttons .btn-download {
@@ -239,8 +258,8 @@ body {
   /* --- 加在這裡 --- */
 }
 .hero-section .cta-buttons .btn-download:hover {
-  background-color: #5b5757;
-  color: #000;
+  background-color: #000000;
+  color: #fffefe;
   transform: translateY(-2px);
 }
 .hero-section .social-links {
