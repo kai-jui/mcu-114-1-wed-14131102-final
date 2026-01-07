@@ -92,17 +92,29 @@ body {
       border: none;
       cursor: pointer;
       font-weight: bold;
-      transition: 0.3s;
+      transition: 0.3s; // 這行很重要，確保變色是平滑的
     }
 
     .btn-hire {
       background-color: #4d6ae9;
       color: white;
+
+      &:hover {
+        background-color: #0d38e3; // 移上去變深藍色
+        transform: translateY(-2px); // 增加浮起效果
+      }
     }
 
     .btn-download {
       background-color: #f0f0f0;
       color: #333;
+
+      /* --- 加在這裡 --- */
+      &:hover {
+        background-color: #5b5757; // 移上去變深灰色
+        color: #000; // 讓文字更黑一點
+        transform: translateY(-2px);
+      }
     }
   }
 

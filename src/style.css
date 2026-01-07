@@ -229,9 +229,19 @@ body {
   background-color: #4d6ae9;
   color: white;
 }
+.hero-section .cta-buttons .btn-hire:hover {
+  background-color: #0d38e3;
+  transform: translateY(-2px);
+}
 .hero-section .cta-buttons .btn-download {
   background-color: #f0f0f0;
   color: #333;
+  /* --- 加在這裡 --- */
+}
+.hero-section .cta-buttons .btn-download:hover {
+  background-color: #5b5757;
+  color: #000;
+  transform: translateY(-2px);
 }
 .hero-section .social-links {
   display: flex;
